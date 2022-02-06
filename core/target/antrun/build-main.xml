@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="D:\maven\myntra\shoping\core\target/test-classes/test.csv" todir="C:\Users\RAMAKR~1\AppData\Local\Temp\" overwrite="true"/>
+</target>
+</project>

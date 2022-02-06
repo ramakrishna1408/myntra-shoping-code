@@ -1,0 +1,65 @@
+17:52:28.158 INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization started
+17:52:28.236 INFO  org.springframework.web.context.support.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Sun Feb 06 17:52:28 IST 2022]; root of context hierarchy
+17:52:31.627 ERROR org.springframework.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityValidationInterceptor': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.validation.Validator org.apache.syncope.core.persistence.validation.entity.EntityValidationInterceptor.validator; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validator' defined in file [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope\WEB-INF\classes\persistenceContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:609) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1100) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1618) ~[catalina.jar:7.0.29]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.validation.Validator org.apache.syncope.core.persistence.validation.entity.EntityValidationInterceptor.validator; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validator' defined in file [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope\WEB-INF\classes\persistenceContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 26 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validator' defined in file [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope\WEB-INF\classes\persistenceContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1455) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 28 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.apache.bval.jsr303.ConfigurationImpl.parseValidationXml(ConfigurationImpl.java:268) ~[bval-jsr303-0.4.jar:0.4]
+	at org.apache.bval.jsr303.ConfigurationImpl.prepare(ConfigurationImpl.java:258) ~[bval-jsr303-0.4.jar:0.4]
+	at org.apache.bval.jsr303.ConfigurationImpl.doPrivBuildValidatorFactory(ConfigurationImpl.java:248) ~[bval-jsr303-0.4.jar:0.4]
+	at org.apache.bval.jsr303.util.SecureActions$5.run(SecureActions.java:131) ~[bval-jsr303-0.4.jar:0.4]
+	at org.apache.bval.jsr303.util.SecureActions$5.run(SecureActions.java:129) ~[bval-jsr303-0.4.jar:0.4]
+	at org.apache.bval.jsr303.ConfigurationImpl.run(ConfigurationImpl.java:337) ~[bval-jsr303-0.4.jar:0.4]
+	at org.apache.bval.jsr303.ConfigurationImpl.buildValidatorFactory(ConfigurationImpl.java:244) ~[bval-jsr303-0.4.jar:0.4]
+	at org.springframework.validation.beanvalidation.LocalValidatorFactoryBean.afterPropertiesSet(LocalValidatorFactoryBean.java:220) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1514) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 38 common frames omitted
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1711) ~[catalina.jar:7.0.29]
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1556) ~[catalina.jar:7.0.29]
+	... 48 common frames omitted

@@ -1,0 +1,2 @@
+17:52:30.306 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'syncopePersistenceUnit'
+17:52:31.611 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'syncopePersistenceUnit'

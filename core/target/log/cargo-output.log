@@ -1,0 +1,456 @@
+Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option PermSize; support was removed in 8.0
+Java HotSpot(TM) 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+Feb 06, 2022 5:52:10 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\common\classes], exists: [false], isDirectory: [false], canRead: [false]
+Feb 06, 2022 5:52:10 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\shared\classes], exists: [false], isDirectory: [false], canRead: [false]
+Feb 06, 2022 5:52:10 PM org.apache.catalina.startup.ClassLoaderFactory validateFile
+WARNING: Problem with directory [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\shared\lib], exists: [false], isDirectory: [false], canRead: [false]
+Feb 06, 2022 5:52:11 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk-11.0.14\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk-11.0.14\bin;D:\software\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\Users\ramakrishnamopoori\AppData\Local\Microsoft\WindowsApps;;.
+Feb 06, 2022 5:52:11 PM org.apache.catalina.startup.SetAllPropertiesRule begin
+WARNING: [SetAllPropertiesRule]{Server/Service/Connector} Setting property 'emptySessionPath' to 'true' did not find a matching property.
+Feb 06, 2022 5:52:11 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-9080"]
+Feb 06, 2022 5:52:11 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Feb 06, 2022 5:52:11 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 839 ms
+Feb 06, 2022 5:52:11 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Feb 06, 2022 5:52:11 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.29
+Feb 06, 2022 5:52:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\cargocpc.war
+Feb 06, 2022 5:52:11 PM org.apache.catalina.loader.WebappLoader setClassPath
+INFO: Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+Feb 06, 2022 5:52:12 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [188] milliseconds.
+Feb 06, 2022 5:52:12 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope-build-tools.war
+Feb 06, 2022 5:52:12 PM org.apache.catalina.loader.WebappLoader setClassPath
+INFO: Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+Feb 06, 2022 5:52:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 06, 2022 5:52:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+06.02.2022 17:52:15 INFO  [org.springframework.web.context.ContextLoader.initWebApplicationContext():272] Root WebApplicationContext: initialization started
+06.02.2022 17:52:15 INFO  [org.springframework.context.support.AbstractApplicationContext.prepareRefresh():500] Refreshing Root WebApplicationContext: startup date [Sun Feb 06 17:52:15 IST 2022]; root of context hierarchy
+06.02.2022 17:52:15 INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions():315] Loading XML bean definitions from file [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope-build-tools\WEB-INF\classes\applicationContext.xml]
+06.02.2022 17:52:15 INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons():581] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18999538: defining beans [testDataSource]; root of factory hierarchy
+06.02.2022 17:52:15 INFO  [org.springframework.jdbc.datasource.DriverManagerDataSource.setDriverClassName():153] Loaded JDBC driver: org.h2.Driver
+06.02.2022 17:52:15 INFO  [org.springframework.web.context.ContextLoader.initWebApplicationContext():301] Root WebApplicationContext: initialization completed in 581 ms
+Feb 06, 2022 5:52:20 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.apache.syncope.buildtools.ApacheDSStartStopListener
+java.lang.ExceptionInInitializerError
+	at org.apache.directory.server.core.partition.ldif.LdifPartition.getOSFileName(LdifPartition.java:630)
+	at org.apache.directory.server.core.partition.ldif.LdifPartition.getFileName(LdifPartition.java:621)
+	at org.apache.directory.server.core.partition.ldif.LdifPartition.doInit(LdifPartition.java:187)
+	at org.apache.directory.server.core.partition.AbstractPartition.initialize(AbstractPartition.java:65)
+	at org.apache.directory.server.core.schema.SchemaPartition.doInit(SchemaPartition.java:229)
+	at org.apache.directory.server.core.partition.AbstractPartition.initialize(AbstractPartition.java:65)
+	at org.apache.directory.server.core.DefaultDirectoryService.initialize(DefaultDirectoryService.java:1426)
+	at org.apache.directory.server.core.DefaultDirectoryService.startup(DefaultDirectoryService.java:907)
+	at org.apache.syncope.buildtools.ApacheDSStartStopListener.initDirectoryService(ApacheDSStartStopListener.java:179)
+	at org.apache.syncope.buildtools.ApacheDSStartStopListener.contextInitialized(ApacheDSStartStopListener.java:214)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.NumberFormatException: multiple points
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1914)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:455)
+	at org.apache.directory.shared.ldap.util.SystemUtils.getJavaVersionAsFloat(SystemUtils.java:1336)
+	at org.apache.directory.shared.ldap.util.SystemUtils.<clinit>(SystemUtils.java:944)
+	... 23 more
+
+Web Console server running at http://192.168.0.116:9082 (only local connections)
+TCP server running at tcp://192.168.0.116:9092 (only local connections)
+Feb 06, 2022 5:52:20 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+Feb 06, 2022 5:52:20 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/syncope-build-tools] startup failed due to previous errors
+Feb 06, 2022 5:52:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+06.02.2022 17:52:20 INFO  [org.springframework.context.support.AbstractApplicationContext.doClose():1025] Closing Root WebApplicationContext: startup date [Sun Feb 06 17:52:15 IST 2022]; root of context hierarchy
+06.02.2022 17:52:20 INFO  [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons():433] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18999538: defining beans [testDataSource]; root of factory hierarchy
+Feb 06, 2022 5:52:20 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/syncope-build-tools] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.catalina.loader.WebappClassLoader (file:/C:/Users/ramakrishnamopoori/AppData/Local/Temp/apache-tomcat-7.0.29/apache-tomcat-7.0.29/lib/catalina.jar) to field java.lang.Thread.threadLocals
+WARNING: Please consider reporting this to the maintainers of org.apache.catalina.loader.WebappClassLoader
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Feb 06, 2022 5:52:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\wssample.war
+Feb 06, 2022 5:52:21 PM org.apache.catalina.loader.WebappLoader setClassPath
+INFO: Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+Feb 06, 2022 5:52:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Feb 06, 2022 5:52:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Feb 06, 2022 5:52:23 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [wssampleContext.xml]; nested exception is org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.cxf.jaxws.spring.NamespaceHandler] for namespace [http://cxf.apache.org/jaxws]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:385)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:284)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.cxf.jaxws.spring.NamespaceHandler] for namespace [http://cxf.apache.org/jaxws]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:139)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1414)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 26 more
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.apache.cxf.jaxws.spring.NamespaceHandler.init(NamespaceHandler.java:34)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:130)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1711)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1556)
+	... 35 more
+
+Feb 06, 2022 5:52:23 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.connid.bundles.soap.wssample.DefaultContentLoader
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [wssampleContext.xml]; nested exception is org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.cxf.jaxws.spring.NamespaceHandler] for namespace [http://cxf.apache.org/jaxws]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:522)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:436)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:385)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:284)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.FatalBeanException: Invalid NamespaceHandler class [org.apache.cxf.jaxws.spring.NamespaceHandler] for namespace [http://cxf.apache.org/jaxws]: problem with handler class file or dependent class; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:139)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1414)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 26 more
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.apache.cxf.jaxws.spring.NamespaceHandler.init(NamespaceHandler.java:34)
+	at org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver.resolve(DefaultNamespaceHandlerResolver.java:130)
+	... 33 more
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1711)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1556)
+	... 35 more
+
+Feb 06, 2022 5:52:23 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+Feb 06, 2022 5:52:23 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/wssample] startup failed due to previous errors
+Feb 06, 2022 5:52:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Feb 06, 2022 5:52:23 PM org.apache.catalina.core.StandardContext listenerStop
+SEVERE: Exception sending context destroyed event to listener instance of class org.springframework.web.context.ContextLoaderListener
+java.lang.IllegalStateException: BeanFactory not initialized or already closed - call 'refresh' before accessing beans via the ApplicationContext
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.getBeanFactory(AbstractRefreshableApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1066)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1040)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:988)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:556)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:142)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4831)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5478)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:963)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1600)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Feb 06, 2022 5:52:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\host-manager
+Feb 06, 2022 5:52:23 PM org.apache.catalina.loader.WebappLoader setClassPath
+INFO: Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+Feb 06, 2022 5:52:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\manager
+Feb 06, 2022 5:52:23 PM org.apache.catalina.loader.WebappLoader setClassPath
+INFO: Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+Feb 06, 2022 5:52:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope
+Feb 06, 2022 5:52:23 PM org.apache.catalina.loader.WebappLoader setClassPath
+INFO: Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+Feb 06, 2022 5:52:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+17:52:27,717 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+17:52:27,717 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+17:52:27,717 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/D:/maven/myntra/shoping/core/target/cargo/configurations/tomcat7x/webapps/syncope/WEB-INF/classes/logback.xml]
+17:52:27,780 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+17:52:27,780 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@48ae7b72 - Adding [file:/D:/maven/myntra/shoping/core/target/cargo/configurations/tomcat7x/webapps/syncope/WEB-INF/classes/audit.xml] to configuration watch list.
+17:52:27,780 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.classic.db.DBAppender]
+17:52:27,796 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [audit]
+17:52:27,827 |-ERROR in org.apache.syncope.core.audit.JNDIFallbackConnectionSource@67bea699 - During lookup of java:comp/env/jdbc/syncopeDataSource
+17:52:27,827 |-INFO in org.apache.syncope.core.audit.JNDIFallbackConnectionSource@67bea699 - Could not obtain DataSource via JNDI
+17:52:28,018 |-INFO in org.apache.syncope.core.audit.JNDIFallbackConnectionSource@67bea699 - Provided DataSource successfully reported
+17:52:28,018 |-INFO in ch.qos.logback.core.db.DataSourceConnectionSource@34706b6a - Driver name=H2 JDBC Driver
+17:52:28,018 |-INFO in ch.qos.logback.core.db.DataSourceConnectionSource@34706b6a - Driver version=1.3.167 (2012-05-23)
+17:52:28,018 |-INFO in ch.qos.logback.core.db.DataSourceConnectionSource@34706b6a - supportsGetGeneratedKeys=true
+17:52:28,032 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [syncope.audit] to false
+17:52:28,032 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - syncope.audit level set to OFF
+17:52:28,032 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [audit] to Logger[syncope.audit]
+17:52:28,032 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+17:52:28,032 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [main]
+17:52:28,062 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+17:52:28,062 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern D://maven//myntra//shoping//core//target/log/core.log.%d{yyyy-MM-dd} for the active file
+17:52:28,078 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'D://maven//myntra//shoping//core//target/log/core.log.%d{yyyy-MM-dd}'.
+17:52:28,078 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+17:52:28,078 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 06 17:52:28 IST 2022
+17:52:28,078 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:52:28,094 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[main] - Active log file name: D:\\maven\\myntra\\shoping\\core\\target/log/core.log
+17:52:28,094 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[main] - File property is set to [D:\\maven\\myntra\\shoping\\core\\target/log/core.log]
+17:52:28,094 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+17:52:28,094 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [persistence]
+17:52:28,109 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+17:52:28,109 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern D://maven//myntra//shoping//core//target/log/core-persistence.log.%d{yyyy-MM-dd} for the active file
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'D://maven//myntra//shoping//core//target/log/core-persistence.log.%d{yyyy-MM-dd}'.
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 06 17:52:28 IST 2022
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:52:28,109 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[persistence] - Active log file name: D:\\maven\\myntra\\shoping\\core\\target/log/core-persistence.log
+17:52:28,109 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[persistence] - File property is set to [D:\\maven\\myntra\\shoping\\core\\target/log/core-persistence.log]
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [rest]
+17:52:28,109 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+17:52:28,109 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern D://maven//myntra//shoping//core//target/log/core-rest.log.%d{yyyy-MM-dd} for the active file
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'D://maven//myntra//shoping//core//target/log/core-rest.log.%d{yyyy-MM-dd}'.
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 06 17:52:28 IST 2022
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:52:28,109 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[rest] - Active log file name: D:\\maven\\myntra\\shoping\\core\\target/log/core-rest.log
+17:52:28,109 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[rest] - File property is set to [D:\\maven\\myntra\\shoping\\core\\target/log/core-rest.log]
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [connid]
+17:52:28,109 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+17:52:28,109 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern D://maven//myntra//shoping//core//target/log/core-connid.log.%d{yyyy-MM-dd} for the active file
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'D://maven//myntra//shoping//core//target/log/core-connid.log.%d{yyyy-MM-dd}'.
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+17:52:28,109 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 06 17:52:28 IST 2022
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:52:28,109 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[connid] - Active log file name: D:\\maven\\myntra\\shoping\\core\\target/log/core-connid.log
+17:52:28,109 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[connid] - File property is set to [D:\\maven\\myntra\\shoping\\core\\target/log/core-connid.log]
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+17:52:28,109 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [test]
+17:52:28,118 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - No compression will be used
+17:52:28,118 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern D://maven//myntra//shoping//core//target/log/core-test.log.%d{yyyy-MM-dd} for the active file
+17:52:28,118 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern 'D://maven//myntra//shoping//core//target/log/core-test.log.%d{yyyy-MM-dd}'.
+17:52:28,118 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+17:52:28,118 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Sun Feb 06 17:52:28 IST 2022
+17:52:28,118 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:52:28,118 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[test] - Active log file name: D:\\maven\\myntra\\shoping\\core\\target/log/core-test.log
+17:52:28,118 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[test] - File property is set to [D:\\maven\\myntra\\shoping\\core\\target/log/core-test.log]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.syncope.client] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.syncope.client level set to OFF
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [main] to Logger[org.apache.syncope.client]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.syncope.core.persistence] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.syncope.core.persistence level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [persistence] to Logger[org.apache.syncope.core.persistence]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.syncope.core.persistence.propagation.ConnectorFacadeProxy] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.syncope.core.persistence.propagation.ConnectorFacadeProxy level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [persistence] to Logger[org.apache.syncope.core.persistence.propagation.ConnectorFacadeProxy]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.syncope.core.security] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.syncope.core.security level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [main] to Logger[org.apache.syncope.core.security]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.syncope.core.rest] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.syncope.core.rest level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [rest] to Logger[org.apache.syncope.core.rest]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.identityconnectors] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.identityconnectors level set to DEBUG
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [connid] to Logger[org.identityconnectors]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.syncope.core.connid] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.syncope.core.connid level set to DEBUG
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [connid] to Logger[org.apache.syncope.core.connid]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.connid] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.connid level set to DEBUG
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [connid] to Logger[org.connid]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.syncope.core.test] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.syncope.core.test level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [test] to Logger[org.apache.syncope.core.test]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.springframework level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [main] to Logger[org.springframework]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework.orm] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.springframework.orm level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [persistence] to Logger[org.springframework.orm]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework.test] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.springframework.test level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [test] to Logger[org.springframework.test]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework.web] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.springframework.web level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [rest] to Logger[org.springframework.web]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.apache.http] to false
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - org.apache.http level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [test] to Logger[org.apache.http]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.LevelAction - ROOT level set to INFO
+17:52:28,158 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [main] to Logger[ROOT]
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+17:52:28,158 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@79b0c31c - Registering current configuration as safe fallback point
+
+SLF4J: The following loggers will not work because they were created
+SLF4J: during the default configuration phase of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
+SLF4J: org.springframework.jdbc.datasource.DriverManagerDataSource
+Feb 06, 2022 5:52:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+16  syncopePersistenceUnit  WARN   [localhost-startStop-1] openjpa.Runtime - An error occurred while registering a ClassTransformer with PersistenceUnitInfo: name 'syncopePersistenceUnit', root URL [file:/D:/maven/myntra/shoping/core/target/cargo/configurations/tomcat7x/webapps/syncope/WEB-INF/classes/]. The error has been consumed. To see it, set your openjpa.Runtime log level to TRACE. Load-time class transformation will not be available.
+Feb 06, 2022 5:52:31 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityValidationInterceptor': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.validation.Validator org.apache.syncope.core.persistence.validation.entity.EntityValidationInterceptor.validator; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validator' defined in file [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope\WEB-INF\classes\persistenceContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:618)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1100)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1618)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private javax.validation.Validator org.apache.syncope.core.persistence.validation.entity.EntityValidationInterceptor.validator; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validator' defined in file [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope\WEB-INF\classes\persistenceContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validator' defined in file [D:\maven\myntra\shoping\core\target\cargo\configurations\tomcat7x\webapps\syncope\WEB-INF\classes\persistenceContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 28 more
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.apache.bval.jsr303.ConfigurationImpl.parseValidationXml(ConfigurationImpl.java:268)
+	at org.apache.bval.jsr303.ConfigurationImpl.prepare(ConfigurationImpl.java:258)
+	at org.apache.bval.jsr303.ConfigurationImpl.doPrivBuildValidatorFactory(ConfigurationImpl.java:248)
+	at org.apache.bval.jsr303.util.SecureActions$5.run(SecureActions.java:131)
+	at org.apache.bval.jsr303.util.SecureActions$5.run(SecureActions.java:129)
+	at org.apache.bval.jsr303.ConfigurationImpl.run(ConfigurationImpl.java:337)
+	at org.apache.bval.jsr303.ConfigurationImpl.buildValidatorFactory(ConfigurationImpl.java:244)
+	at org.springframework.validation.beanvalidation.LocalValidatorFactoryBean.afterPropertiesSet(LocalValidatorFactoryBean.java:220)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1452)
+	... 38 more
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1711)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1556)
+	... 48 more
+
+Feb 06, 2022 5:52:31 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+Feb 06, 2022 5:52:31 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/syncope] startup failed due to previous errors
+Feb 06, 2022 5:52:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Feb 06, 2022 5:52:31 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-9080"]
+Feb 06, 2022 5:52:31 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Feb 06, 2022 5:52:31 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 20108 ms
+Feb 06, 2022 5:52:34 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Feb 06, 2022 5:52:34 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-9080"]
+Feb 06, 2022 5:52:34 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Feb 06, 2022 5:52:35 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Feb 06, 2022 5:52:35 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-9080"]
+Feb 06, 2022 5:52:35 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Feb 06, 2022 5:52:35 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-9080"]
+Feb 06, 2022 5:52:35 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
